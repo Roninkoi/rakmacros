@@ -1,0 +1,108 @@
+\ProvidesPackage{rakmacros}[22.7.2020 v1.0 R. A. Koitermaa]
+% CUSTOM COMMANDS
+% util
+\newcommand{\x}{\text}
+\newcommand{\putrule}{\noindent\rule{\textwidth}{1pt}}
+\newcommand{\dualfig}[4]{
+  \begin{minipage}{.49\textwidth}   
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{.49\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{figure}
+  \end{minipage}
+}
+\newcommand{\fig}[2]{
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{#1}
+    \caption{#2}
+  \end{figure}
+}
+\newcommand{\animfig}[3]{
+  \begin{figure}[H]
+    \begin{center}
+      \animategraphics[width=\textwidth,loop,autoplay]{12}{#1}{0}{#2}
+    \end{center}
+    \caption{#2}
+  \end{figure}
+}
+\newcommand{\texfig}{
+  \begin{figure}[H]
+    \begin{center}
+      \fontsize{20pt}{1em}
+      \resizebox{\linewidth}{!}{\input{#1}}
+    \end{center}
+    \caption{#2}
+  \end{figure}
+}
+% characters
+% \newcommand{\tmu}{\ensuremath{\mu}}
+
+% math
+\newcommand{\eint}[2]{\mathrel{ \substack{#2\\ \bigg /\\ #1}}} % definite integral
+\newcommand{\D}{\text{d}} % derivative
+\newcommand{\BD}{\text{D}} % total derivative
+\newcommand{\I}{\text{i}} % imaginary unit
+\newcommand{\mln}{\overline{\ln}}
+\newcommand{\Ln}{\text{Ln}} % logarithm principal value
+\newcommand{\Arg}{\text{Arg}} % argument of complex
+\newcommand{\Res}{\text{Res}} % residual
+\newcommand{\Ind}{\text{Ind}} % winding number
+\newcommand{\lb}{\left(} % left adaptive parenthesis
+  \newcommand{\rb}{\right)} % right adaptive parenthesis
+\newcommand{\lsb}{\left[} % left adaptive square bracket
+  \newcommand{\rsb}{\right]} % right adaptive square bracket
+\newcommand{\Imag}{\text{Im} \ } % imaginary part
+\newcommand{\Real}{\text{Re} \ } % real part
+\newcommand{\ft}{\mathcal{F}} % fourier transform
+\newcommand{\lt}{\mathcal{L}} % laplace transform
+\newcommand{\pe}{\mathrel{+}=} % plus equals
+\newcommand{\te}{\mathrel{*}=} % times equals
+\newcommand{\T}{\intercal} % transpose
+\newcommand{\inv}{{-1}} % inverse
+\newcommand{\adj}{\x{adj}} % adjugate
+\newcommand{\Tr}{\x{Tr}} % trace
+\newcommand{\mcom}{ \ \bigg| \ } % math comment
+\newenvironment{nalign}{ % no individual number aligned
+  \begin{equation}
+    \begin{aligned}
+    }{
+    \end{aligned}
+  \end{equation}
+  \ignorespacesafterend
+}
+\newcommand{\bna}{ \begin{nalign} \nonumber} % begin no number aligned
+  \newcommand{\ena}{ \end{nalign} } % end no number aligned
+\newcommand{\bpm}{\begin{pmatrix}} % begin pmatrix
+  \newcommand{\epm}{\end{pmatrix}} % end pmatrix
+\newcommand{\be}{\begin{equation}} % begin equation
+  \newcommand{\ee}{\end{equation}} % end equation
+
+% units
+\newcommand{\us}[1]{ \ \text{#1}} % unit + space
+\newcommand{\un}[1]{ \text{#1}} % unit
+\newcommand{\up}[2]{\text{#1}^{#2}} % unit power
+\newcommand{\uf}[2]{ \ \frac{\text{#1}}{\text{#2}}} % fraction of units
+\newcommand{\mic}{$\upmu$} % micron
+\newcommand{\degc}{ \ ^\circ\text{C}} % degree celsius
+\newcommand{\degs}{^\circ} % degrees
+\newcommand{\es}{\text{e}} % scientific notation
+\newcommand{\tp}[1]{ \times 10^{#1}} % power of ten
+\newcommand{\vb}[1]{\text{\textbf{#1}}} % vector bold
+
+% physics
+% \newcommand{\Ren}{\x{Re}}
+% \newcommand{\fnb}{F_{\x{nb}}}
+% \newcommand{\sumnb}{\sum_{f \in \fnb}}
+
+% \newcommand{\chapter}[1]{\section*{#1}}
+% \newcommand{\chapter}{\section}
+
