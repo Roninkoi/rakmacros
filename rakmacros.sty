@@ -1,6 +1,8 @@
-\ProvidesPackage{rakmacros}[22.7.2020 v1.0 R. A. Koitermaa]
+\ProvidesPackage{rakmacros}[16.9.2020 v1.0 R. Koitermaa]
 % CUSTOM COMMANDS
 % util
+% \newcommand{\chapter}[1]{\section*{#1}}
+% \newcommand{\chapter}{\section}
 \newcommand{\x}{\text}
 \newcommand{\putrule}{\noindent\rule{\textwidth}{1pt}}
 \newcommand{\dualfig}[4]{
@@ -114,6 +116,10 @@
   \newcommand{\ena}{ \end{nalign} } % end no number aligned
 \newcommand{\bpm}{\begin{pmatrix}} % begin pmatrix
   \newcommand{\epm}{\end{pmatrix}} % end pmatrix
+\newcommand{\bbm}{\begin{bmatrix}} % begin bmatrix
+  \newcommand{\ebm}{\end{bmatrix}} % end bmatrix
+\newcommand{\bvm}{\begin{vmatrix}} % begin vmatrix
+  \newcommand{\evm}{\end{vmatrix}} % end vmatrix
 \newcommand{\be}{\begin{equation}} % begin equation
   \newcommand{\ee}{\end{equation}} % end equation
 
@@ -133,7 +139,4 @@
 % \newcommand{\Ren}{\x{Re}}
 % \newcommand{\fnb}{F_{\x{nb}}}
 % \newcommand{\sumnb}{\sum_{f \in \fnb}}
-
-% \newcommand{\chapter}[1]{\section*{#1}}
-% \newcommand{\chapter}{\section}
 
