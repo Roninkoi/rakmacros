@@ -1,0 +1,129 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.10)  21 SEP 2020 19:54
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\input rakmacros.sty
+ (./rakmacros.sty
+
+LaTeX Warning: You have requested package `',
+               but the package provides `rakmacros'.
+
+Package: rakmacros 16.9.2020 v1.0 R. Koitermaa
+./rakmacros.sty:127: You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m {}
+l.127 \@
+        ifpackageloaded{amsthm}{
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./rakmacros.sty:127: Missing $ inserted.
+<inserted text> 
+                $
+l.127 \@
+        ifpackageloaded{amsthm}{
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./rakmacros.sty:127: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \@
+        ifpackageloaded{amsthm}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 127.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 127.
+\c@theorem=\count167
+./rakmacros.sty:129: Undefined control sequence.
+<recently read> \theoremstyle 
+                              
+l.129   \theoremstyle
+                     {definition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\c@definition=\count168
+
+./rakmacros.sty:130: LaTeX Error: No counter 'section' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 ...wtheorem{definition}{Definition}[section]
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@lemma=\count169
+\c@corollary=\count170
+./rakmacros.sty:133: Undefined control sequence.
+<recently read> \theoremstyle 
+                              
+l.133   \theoremstyle
+                     {remark}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./rakmacros.sty:134: LaTeX Error: Command \* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134   \newtheorem*{remark}{
+                             Remark}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./rakmacros.sty:136: Missing $ inserted.
+<inserted text> 
+                $
+l.136 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (247.09593pt too wide) in paragraph at lines 127--136
+[]$[]\OML/cmm/m/it/10 ifpackageloaded[][]$ 
+ []
+
+)
+! Emergency stop.
+<*> \input rakmacros.sty
+                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 102 strings out of 482555
+ 915 string characters out of 5952145
+ 234651 words of memory out of 5000000
+ 15843 multiletter control sequences out of 15000+600000
+ 532338 words of font info for 24 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 19i,3n,15p,110b,60s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
