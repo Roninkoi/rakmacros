@@ -60,12 +60,12 @@
   \end{figure}
 }
 \newcommand{\wrapfig}[3]{
-\begin{wrapfigure}{r}{#3\textwidth}
-  \begin{center}
-    \includegraphics[width=1.0\linewidth]{#1}
-  \end{center}
-  \caption{#2}
-\end{wrapfigure}
+  \begin{wrapfigure}{r}{#3\textwidth}
+    \begin{center}
+      \includegraphics[width=1.0\linewidth]{#1}
+    \end{center}
+    \caption{#2}
+  \end{wrapfigure}
 }
 \newcommand{\texfig}[2]{
   \begin{figure}[H]
@@ -124,13 +124,15 @@
   \newcommand{\ee}{\end{equation}} % end equation
 
 % proof
-\newtheorem{theorem}{Theorem}
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
-\newtheorem{lemma}{Lemma}
-\newtheorem{corollary}{Corollary}
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
+\@ifpackageloaded{amsthm}{
+  \newtheorem{theorem}{Theorem}
+  \theoremstyle{definition}
+  \newtheorem{definition}{Definition}[section]
+  \newtheorem{lemma}{Lemma}
+  \newtheorem{corollary}{Corollary}
+  \theoremstyle{remark}
+  \newtheorem*{remark}{Remark}
+}
 
 % units
 \newcommand{\us}[1]{ \ \text{#1}} % unit + space
