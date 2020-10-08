@@ -77,10 +77,11 @@
   \end{figure}
 }
 % characters
-% \newcommand{\tmu}{\ensuremath{\mu}}
+ \newcommand{\tmu}{\ensuremath{\mu}}
 
 % math
-\newcommand{\eint}[2]{\mathrel{ \substack{#2\\ \bigg /\\ #1}}} % definite integral
+ \newcommand{\eint}[2]{\mathrel{ \substack{#2\\ \bigg /\\ #1}}} % definite integral
+\newcommand{\ninfty}{{-\infty}} % negative infinity
 \newcommand{\D}{\text{d}} % derivative
 \newcommand{\BD}{\text{D}} % total derivative
 \newcommand{\I}{\text{i}} % imaginary unit
@@ -93,6 +94,8 @@
   \newcommand{\rb}{\right)} % right adaptive parenthesis
 \newcommand{\lsb}{\left[} % left adaptive square bracket
   \newcommand{\rsb}{\right]} % right adaptive square bracket
+\newcommand{\lab}{\left \langle} % left adaptive square bracket
+  \newcommand{\rab}{\right \rangle} % right adaptive square bracket
 \newcommand{\Imag}{\text{Im} \ } % imaginary part
 \newcommand{\Real}{\text{Re} \ } % real part
 \newcommand{\ft}{\mathcal{F}} % fourier transform
@@ -143,7 +146,7 @@
 \newcommand{\un}[1]{ \text{#1}} % unit
 \newcommand{\up}[2]{\text{#1}^{#2}} % unit power
 \newcommand{\uf}[2]{ \ \frac{\text{#1}}{\text{#2}}} % fraction of units
-\newcommand{\mic}{$\upmu$} % micron
+\newcommand{\mic}{$\upmu$} % micron \usepackage{upgreek}
 \newcommand{\degc}{ \ ^\circ\text{C}} % degree celsius
 \newcommand{\degs}{^\circ} % degrees
 \newcommand{\es}{\text{e}} % scientific notation
