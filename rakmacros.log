@@ -1,0 +1,381 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.10)  15 OCT 2020 00:32
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\input rakmacros.sty
+ (./rakmacros.sty
+
+LaTeX Warning: You have requested package `',
+               but the package provides `rakmacros'.
+
+Package: rakmacros 16.9.2020 v1.0 R. Koitermaa
+./rakmacros.sty:138: You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m {}
+l.138 \@
+        ifpackageloaded{amsthm}{
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./rakmacros.sty:138: Missing $ inserted.
+<inserted text> 
+                $
+l.138 \@
+        ifpackageloaded{amsthm}{
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./rakmacros.sty:138: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \@
+        ifpackageloaded{amsthm}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 138.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 138.
+\c@theorem=\count167
+./rakmacros.sty:140: Undefined control sequence.
+<recently read> \theoremstyle 
+                              
+l.140   \theoremstyle
+                     {definition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\c@definition=\count168
+
+./rakmacros.sty:141: LaTeX Error: No counter 'section' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 ...wtheorem{definition}{Definition}[section]
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@lemma=\count169
+\c@corollary=\count170
+./rakmacros.sty:144: Undefined control sequence.
+<recently read> \theoremstyle 
+                              
+l.144   \theoremstyle
+                     {remark}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./rakmacros.sty:145: LaTeX Error: Command \* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145   \newtheorem*{remark}{
+                             Remark}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./rakmacros.sty:147: Missing $ inserted.
+<inserted text> 
+                $
+l.147 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (247.09593pt too wide) in paragraph at lines 138--147
+[]$[]\OML/cmm/m/it/10 ifpackageloaded[][]$ 
+ []
+
+./rakmacros.sty:166: You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m {}
+l.166 \@
+        ifpackageloaded{listings}{
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./rakmacros.sty:166: Missing $ inserted.
+<inserted text> 
+                $
+l.166 \@
+        ifpackageloaded{listings}{
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./rakmacros.sty:166: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 \@
+        ifpackageloaded{listings}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./rakmacros.sty:167: Undefined control sequence.
+l.167 \lstdefineformat
+                      {C}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rakmacros.sty:172: Missing $ inserted.
+<inserted text> 
+                $
+l.172 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./rakmacros.sty:172: Missing } inserted.
+<inserted text> 
+                }
+l.172 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (402.96298pt too wide) in paragraph at lines 166--172
+[]$[]\OML/cmm/m/it/10 ifpackageloaded[][]$ 
+ []
+
+./rakmacros.sty:173: Undefined control sequence.
+l.173 \lstset
+             {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./rakmacros.sty:175: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 f
+       ramexleftmargin=10mm,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+./rakmacros.sty:178: Undefined control sequence.
+l.178 keywordstyle=\bfseries\color
+                                  {blue},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rakmacros.sty:180: Undefined control sequence.
+l.180 numberstyle=\color
+                        [RGB]{0,192,192},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rakmacros.sty:181: Undefined control sequence.
+l.181 commentstyle=\it
+                      \color[RGB]{0,96,96},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rakmacros.sty:181: Undefined control sequence.
+l.181 commentstyle=\it\color
+                            [RGB]{0,96,96},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rakmacros.sty:182: Undefined control sequence.
+l.182 stringstyle=\rmfamily\slshape\color
+                                         [RGB]{128,0,0},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./rakmacros.sty:185: Too many }'s.
+l.185 }
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 175--186
+[]
+ []
+
+
+Overfull \hbox (24.43738pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 blue,
+ []
+
+
+Overfull \hbox (25.07626pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 iden-
+ []
+
+
+Overfull \hbox (11.49994pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 ti-
+ []
+
+
+Overfull \hbox (20.22908pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 fier-
+ []
+
+
+Overfull \hbox (35.3623pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 style=,
+ []
+
+
+Overfull \hbox (25.87486pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 num-
+ []
+
+
+Overfull \hbox (20.54852pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 ber-
+ []
+
+
+Overfull \hbox (113.91743pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 style=[RGB]0,192,192,
+ []
+
+
+Overfull \hbox (24.27765pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 com-
+ []
+
+
+Overfull \hbox (127.8132pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 mentstyle=[RGB]0,96,96,
+ []
+
+
+Overfull \hbox (131.49512pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/n/10 stringstyle=\OT1/cmr/bx/sl/10 [RGB]128,0,0,
+ []
+
+
+Overfull \hbox (28.49428pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/sl/10 show-
+ []
+
+
+Overfull \hbox (90.3231pt too wide) in paragraph at lines 175--186
+\OT1/cmr/bx/sl/10 stringspaces=true
+ []
+
+)
+! Emergency stop.
+<*> \input rakmacros.sty
+                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 122 strings out of 482555
+ 1046 string characters out of 5952145
+ 235651 words of memory out of 5000000
+ 15861 multiletter control sequences out of 15000+600000
+ 533005 words of font info for 26 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 19i,4n,15p,111b,93s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
