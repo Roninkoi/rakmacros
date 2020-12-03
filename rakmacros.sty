@@ -21,6 +21,22 @@
     \end{figure}
   \end{minipage}\\
 }
+\newcommand{\dualfigs}[5]{
+  \begin{minipage}{.49\textwidth}   
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=#5\linewidth]{#1}
+      \caption{#2}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{.49\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=#5\linewidth]{#3}
+      \caption{#4}
+    \end{figure}
+  \end{minipage}\\
+}
 \newcommand{\trifig}[6]{
   \begin{minipage}{.332\textwidth}   
     \begin{figure}[H]
@@ -41,6 +57,36 @@
       \centering
       \includegraphics[width=1.0\linewidth]{#5}
       \caption{#6}
+    \end{figure}
+  \end{minipage}\\
+}
+\newcommand{\quadfig}[8]{
+  \begin{minipage}{.249\textwidth}   
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{.249\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{.249\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#5}
+      \caption{#6}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{.249\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#7}
+      \caption{#8}
     \end{figure}
   \end{minipage}\\
 }
@@ -102,7 +148,7 @@
 \newcommand{\lt}{\mathcal{L}} % laplace transform
 \newcommand{\pe}{\mathrel{+}=} % plus equals
 \newcommand{\te}{\mathrel{*}=} % times equals
-\newcommand{\T}{\intercal} % transpose
+\newcommand{\T}{\x{T}} % transpose \intercal
 \newcommand{\inv}{{-1}} % inverse
 \DeclareMathOperator{\adj}{\x{adj}} % adjugate
 \DeclareMathOperator{\Tr}{\x{Tr}} % trace
@@ -111,6 +157,7 @@
 \DeclareMathOperator{\Prob}{\x{P}} % probability
 \DeclareMathOperator{\cov}{\x{cov}} % covariance
 \DeclareMathOperator{\erf}{\x{erf}} % error function
+\DeclareMathOperator{\Ai}{\x{Ai}} % Airy function
 \newcommand{\mcom}{ \ \bigg| \ } % math comment
 \newcommand{\dmax}{\x{diff}_\x{max}} % Kolmogorov-Smirnov distance
 \DeclareMathOperator{\sech}{\x{sech}} % hyperbolic secant
@@ -150,6 +197,7 @@
 \newcommand{\un}[1]{ \text{#1}} % unit
 \newcommand{\up}[2]{\text{#1}^{#2}} % unit power
 \newcommand{\uf}[2]{ \ \frac{\text{#1}}{\text{#2}}} % fraction of units
+\newcommand{\ufn}[2]{ \frac{\text{#1}}{\text{#2}}} % fraction of units no space
 \newcommand{\mic}{$\upmu$} % micron \usepackage{upgreek}
 \newcommand{\degc}{ \ ^\circ\text{C}} % degree celsius
 \newcommand{\degs}{^\circ} % degrees
