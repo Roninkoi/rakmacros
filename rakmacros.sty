@@ -140,6 +140,8 @@
   \newcommand{\rb}{\right)} % right adaptive parenthesis
 \newcommand{\lsb}{\left[} % left adaptive square bracket
   \newcommand{\rsb}{\right]} % right adaptive square bracket
+\newcommand{\lcb}{\left\{} % left adaptive curly bracket
+  \newcommand{\rcb}{\right\}} % right adaptive curly bracket
 \newcommand{\lab}{\left \langle} % left adaptive square bracket
   \newcommand{\rab}{\right \rangle} % right adaptive square bracket
 \DeclareMathOperator{\Imag}{\text{Im} } % imaginary part
@@ -160,6 +162,7 @@
 \DeclareMathOperator{\Ai}{\x{Ai}} % Airy function
 \newcommand{\mcom}{ \ \bigg| \ } % math comment
 \newcommand{\dmax}{\x{diff}_\x{max}} % Kolmogorov-Smirnov distance
+\newcommand{\ylm}{Y_\ell^m} % spherical harmonics
 \DeclareMathOperator{\sech}{\x{sech}} % hyperbolic secant
 \DeclareMathOperator{\csch}{\x{csch}} % hyperbolic cosecant
 \DeclareMathOperator{\erfc}{\x{erfc}} % 1-erf
@@ -207,11 +210,6 @@
 \newcommand{\tp}[1]{ \times 10^{#1}} % power of ten
 \newcommand{\vb}[1]{\text{\textbf{#1}}} % vector bold
 
-% physics
-% \newcommand{\Ren}{\x{Re}}
-% \newcommand{\fnb}{F_{\x{nb}}}
-% \newcommand{\sumnb}{\sum_{f \in \fnb}}
-
 % code
 \@ifpackageloaded{listings}{
 \lstdefineformat{C}{%
@@ -235,4 +233,31 @@ showstringspaces=true
 }
 
 \newcommand{\cf}[1]{\texttt{#1}} % console font
+
+% PHYSICS
+
+% fluids
+% \newcommand{\Ren}{\x{Re}}
+% \newcommand{\fnb}{F_{\x{nb}}}
+% \newcommand{\sumnb}{\sum_{f \in \fnb}}
+
+% quantum operators
+%\newcommand{\ha}{\hat a}
+%\newcommand{\had}{\hat a^\dagger}
+%\newcommand{\hx}{\hat X}
+%\newcommand{\hh}{\hat H}
+%\newcommand{\hp}{\hat P}
+%\newcommand{\hu}{\hat U}
+%\newcommand{\hl}{\hat L}
+%\newcommand{\hlx}{\hat L_x}
+%\newcommand{\hly}{\hat L_y}
+%\newcommand{\hlz}{\hat L_z}
+%\newcommand{\hll}{\hat L_\pm}
+%\newcommand{\hlp}{\hat L_+}
+%\newcommand{\hlm}{\hat L_-}
+%\newcommand{\hs}{\hat S}
+%\newcommand{\hsx}{\hat S_x}
+%\newcommand{\hsy}{\hat S_y}
+%\newcommand{\hsz}{\hat S_z}
+%\newcommand{\hj}{\hat J}
 
