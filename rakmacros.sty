@@ -123,10 +123,10 @@
   \end{figure}
 }
 % characters
- \newcommand{\tmu}{\ensuremath{\mu}}
+\newcommand{\tmu}{\ensuremath{\mu}}
 
 % math
- \newcommand{\eint}[2]{\mathrel{ \substack{#2\\ \bigg /\\ #1}}} % definite integral
+\newcommand{\eint}[2]{\mathrel{ \substack{#2\\ \bigg /\\ #1}}} % definite integral
 \newcommand{\ninfty}{{-\infty}} % negative infinity
 \newcommand{\D}{\text{d}} % derivative
 \newcommand{\BD}{\text{D}} % total derivative
@@ -161,6 +161,7 @@
 \DeclareMathOperator{\cov}{\x{cov}} % covariance
 \DeclareMathOperator{\erf}{\x{erf}} % error function
 \DeclareMathOperator{\Ai}{\x{Ai}} % Airy function
+\DeclareMathOperator{\W}{\x{W}} % Lambert W function
 \newcommand{\mcom}{ \ \bigg| \ } % math comment
 \newcommand{\dmax}{\x{diff}_\x{max}} % Kolmogorov-Smirnov distance
 \newcommand{\ylm}{Y_\ell^m} % spherical harmonics
@@ -187,6 +188,8 @@
   \newcommand{\evm}{\end{vmatrix}} % end vmatrix
 \newcommand{\be}{\begin{equation}} % begin equation
   \newcommand{\ee}{\end{equation}} % end equation
+\newcommand{\bc}{\begin{cases}} % begin cases
+  \newcommand{\ec}{\end{cases}} % end cases
 
 % proof
 \@ifpackageloaded{amsthm}{
@@ -203,8 +206,9 @@
 \newcommand{\us}[1]{ \ \text{#1}} % unit + space
 \newcommand{\un}[1]{ \text{#1}} % unit
 \newcommand{\up}[2]{\text{#1}^{#2}} % unit power
-\newcommand{\uf}[2]{ \ \frac{\text{#1}}{\text{#2}}} % fraction of units
-\newcommand{\ufn}[2]{ \frac{\text{#1}}{\text{#2}}} % fraction of units no space
+\newcommand{\usp}[2]{\ \text{#1}^{#2}} % unit power
+\newcommand{\usf}[2]{ \ \frac{\text{#1}}{\text{#2}}} % fraction of units + space
+\newcommand{\uf}[2]{ \frac{\text{#1}}{\text{#2}}} % fraction of units no space
 \newcommand{\mic}{$\upmu$} % micron \usepackage{upgreek}
 \newcommand{\degc}{^\circ\text{C}} % degree celsius
 \newcommand{\degs}{^\circ} % degrees
@@ -214,24 +218,24 @@
 
 % code
 \@ifpackageloaded{listings}{
-\lstdefineformat{C}{%
-\{=\newline\string\newline\indent,%
-\}=[;]\newline\noindent\string\newline,%
-\};=\newline\noindent\string\newline,%
-;=[\ ]\string\space}
+  \lstdefineformat{C}{
+    \{=\newline\string\newline\indent,
+    \}=[;]\newline\noindent\string\newline,
+    \};=\newline\noindent\string\newline,
+    ;=[\ ]\string\space}
 
-\lstset{
-%numbers = left,
-framexleftmargin=10mm,
-frame=none,
-%backgroundcolor=\color[RGB]{245,245,244},
-keywordstyle=\bfseries\color{blue},
-identifierstyle=\bfseries,
-numberstyle=\color[RGB]{0,192,192},
-commentstyle=\it\color[RGB]{0,96,96},
-stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},
-showstringspaces=true
-}
+  \lstset{
+    % numbers = left,
+    framexleftmargin=10mm,
+    frame=none,
+    % backgroundcolor=\color[RGB]{245,245,244},
+    keywordstyle=\bfseries\color{blue},
+    identifierstyle=\bfseries,
+    numberstyle=\color[RGB]{0,192,192},
+    commentstyle=\it\color[RGB]{0,96,96},
+    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},
+    showstringspaces=true
+  }
 }
 
 \newcommand{\cf}[1]{\texttt{#1}} % console font
@@ -244,22 +248,22 @@ showstringspaces=true
 % \newcommand{\sumnb}{\sum_{f \in \fnb}}
 
 % quantum operators
-%\newcommand{\ha}{\hat a}
-%\newcommand{\had}{\hat a^\dagger}
-%\newcommand{\hx}{\hat X}
-%\newcommand{\hh}{\hat H}
-%\newcommand{\hp}{\hat P}
-%\newcommand{\hu}{\hat U}
-%\newcommand{\hl}{\hat L}
-%\newcommand{\hlx}{\hat L_x}
-%\newcommand{\hly}{\hat L_y}
-%\newcommand{\hlz}{\hat L_z}
-%\newcommand{\hll}{\hat L_\pm}
-%\newcommand{\hlp}{\hat L_+}
-%\newcommand{\hlm}{\hat L_-}
-%\newcommand{\hs}{\hat S}
-%\newcommand{\hsx}{\hat S_x}
-%\newcommand{\hsy}{\hat S_y}
-%\newcommand{\hsz}{\hat S_z}
-%\newcommand{\hj}{\hat J}
+% \newcommand{\ha}{\hat a}
+% \newcommand{\had}{\hat a^\dagger}
+% \newcommand{\hx}{\hat X}
+% \newcommand{\hh}{\hat H}
+% \newcommand{\hp}{\hat P}
+% \newcommand{\hu}{\hat U}
+% \newcommand{\hl}{\hat L}
+% \newcommand{\hlx}{\hat L_x}
+% \newcommand{\hly}{\hat L_y}
+% \newcommand{\hlz}{\hat L_z}
+% \newcommand{\hll}{\hat L_\pm}
+% \newcommand{\hlp}{\hat L_+}
+% \newcommand{\hlm}{\hat L_-}
+% \newcommand{\hs}{\hat S}
+% \newcommand{\hsx}{\hat S_x}
+% \newcommand{\hsy}{\hat S_y}
+% \newcommand{\hsz}{\hat S_z}
+% \newcommand{\hj}{\hat J}
 
