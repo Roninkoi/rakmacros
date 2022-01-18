@@ -1,4 +1,15 @@
 \ProvidesPackage{rakmacros}[16.9.2020 v1.0 R. Koitermaa]
+\RequirePackage{wrapfig}
+\RequirePackage{caption}
+\RequirePackage{amsmath, amsfonts, amssymb, amsthm}
+\RequirePackage{float}
+\RequirePackage{comment}
+\RequirePackage{braket}
+\RequirePackage{bm}
+\RequirePackage{multirow}
+\RequirePackage{mathtools}
+\RequirePackage[formats]{listings}
+
 % CUSTOM COMMANDS
 % util
 % \newcommand{\chapter}[1]{\section*{#1}}
@@ -274,28 +285,23 @@
 
 % PHYSICS
 
-% fluids
-% \newcommand{\Ren}{\x{Re}}
-% \newcommand{\fnb}{F_{\x{nb}}}
-% \newcommand{\sumnb}{\sum_{f \in \fnb}}
-
 % quantum operators
-% \newcommand{\ha}{\hat a}
-% \newcommand{\had}{\hat a^\dagger}
-% \newcommand{\hx}{\hat X}
-% \newcommand{\hh}{\hat H}
-% \newcommand{\hp}{\hat P}
-% \newcommand{\hu}{\hat U}
-% \newcommand{\hl}{\hat L}
-% \newcommand{\hlx}{\hat L_x}
-% \newcommand{\hly}{\hat L_y}
-% \newcommand{\hlz}{\hat L_z}
-% \newcommand{\hll}{\hat L_\pm}
-% \newcommand{\hlp}{\hat L_+}
-% \newcommand{\hlm}{\hat L_-}
-% \newcommand{\hs}{\hat S}
-% \newcommand{\hsx}{\hat S_x}
-% \newcommand{\hsy}{\hat S_y}
-% \newcommand{\hsz}{\hat S_z}
-% \newcommand{\hj}{\hat J}
+\newcommand{\ha}{\hat a}
+\newcommand{\had}{\hat a^\dagger}
+\newcommand{\hx}{\hat X}
+\newcommand{\hh}{\hat H}
+\newcommand{\hp}{\hat P}
+\newcommand{\hu}{\hat U}
+\newcommand{\hl}{\hat L}
+\newcommand{\hlx}{\hat L_x}
+\newcommand{\hly}{\hat L_y}
+\newcommand{\hlz}{\hat L_z}
+\newcommand{\hll}{\hat L_\pm}
+\newcommand{\hlp}{\hat L_+}
+\newcommand{\hlm}{\hat L_-}
+\newcommand{\hs}{\hat S}
+\newcommand{\hsx}{\hat S_x}
+\newcommand{\hsy}{\hat S_y}
+\newcommand{\hsz}{\hat S_z}
+\newcommand{\hj}{\hat J}
 
