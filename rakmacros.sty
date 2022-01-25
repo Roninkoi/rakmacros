@@ -153,7 +153,28 @@
     \end{center}
     \caption{#2}
   \end{figure}
-  \noindent
+}
+\newcommand{\dualtexfig}[6]{
+  \begin{minipage}{.49\textwidth}   
+    \begin{figure}[H]
+      \begin{center}
+        \fontsize{#3}{1em}
+        \resizebox{\linewidth}{!}{\input{#1}}
+      \end{center}
+      \caption{#2}
+    \end{figure}
+    \noindent
+    \end{minipage}
+    \begin{minipage}{.49\textwidth}
+    \begin{figure}[H]
+      \begin{center}
+        \fontsize{#6}{1em}
+        \resizebox{\linewidth}{!}{\input{#4}}
+      \end{center}
+      \caption{#5}
+    \end{figure}
+    \end{minipage}
+  \smallskip\\
 }
 
 \newcommand{\urlfn}[1]{\footnote{\url{#1}}} % url as footnote
