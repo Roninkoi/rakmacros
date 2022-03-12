@@ -33,7 +33,7 @@
   \end{minipage}
   \smallskip\\
 }
-\newcommand{\dualfigs}[5]{
+\newcommand{\dualfigs}[5]{ %% [b] or [t] to align
   \begin{minipage}{.49\textwidth}   
     \begin{figure}[H]
       \centering
@@ -51,7 +51,7 @@
   \smallskip\\
 }
 \newcommand{\dualfigss}[6]{
-  \begin{minipage}{.49\textwidth}   
+  \begin{minipage}{.49\textwidth}
     \begin{figure}[H]
       \centering
       \includegraphics[width=#3\linewidth]{#1}
@@ -262,13 +262,15 @@
 
 % proof
 \@ifpackageloaded{amsthm}{
-  \newtheorem{theorem}{Theorem}
-  \theoremstyle{definition}
-  \newtheorem{definition}{Definition}[section]
-  \newtheorem{lemma}{Lemma}
-  \newtheorem{corollary}{Corollary}
-  \theoremstyle{remark}
-  \newtheorem*{remark}{Remark}
+  \@ifundefined{theorem}{
+    \newtheorem{theorem}{Theorem}
+    \theoremstyle{definition}
+    \newtheorem{definition}{Definition}[section]
+    \newtheorem{lemma}{Lemma}
+    \newtheorem{corollary}{Corollary}
+    \theoremstyle{remark}
+    \newtheorem*{remark}{Remark}
+  }
 }
 
 % units
