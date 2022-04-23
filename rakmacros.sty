@@ -1,7 +1,10 @@
 \ProvidesPackage{rakmacros}[16.9.2020 v1.0 R. Koitermaa]
 \RequirePackage{wrapfig}
 \RequirePackage{caption}
-\RequirePackage{amsmath, amsfonts, amssymb, amsthm}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
 \RequirePackage{float}
 \RequirePackage{comment}
 \RequirePackage{braket}
@@ -68,21 +71,45 @@
   \smallskip\\
 }
 \newcommand{\trifig}[6]{
-  \begin{minipage}{.332\textwidth}   
+  \begin{minipage}{.33\textwidth}   
     \begin{figure}[H]
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
       \caption{#2}
     \end{figure}
   \end{minipage}
-  \begin{minipage}{.332\textwidth}
+  \begin{minipage}{.33\textwidth}
     \begin{figure}[H]
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
       \caption{#4}
     \end{figure}
   \end{minipage}
-  \begin{minipage}{.332\textwidth}
+  \begin{minipage}{.33\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#5}
+      \caption{#6}
+    \end{figure}
+  \end{minipage}
+  \smallskip\\
+}
+\newcommand{\trifigs}[7]{
+  \begin{minipage}{#7\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{#7\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{#7\textwidth}
     \begin{figure}[H]
       \centering
       \includegraphics[width=1.0\linewidth]{#5}
@@ -167,8 +194,8 @@
       \caption{#2}
     \end{figure}
     \noindent
-    \end{minipage}
-    \begin{minipage}{.49\textwidth}
+  \end{minipage}
+  \begin{minipage}{.49\textwidth}
     \begin{figure}[H]
       \begin{center}
         \fontsize{#6}{1em}
@@ -176,7 +203,7 @@
       \end{center}
       \caption{#5}
     \end{figure}
-    \end{minipage}
+  \end{minipage}
   \smallskip\\
 }
 
@@ -261,17 +288,17 @@
   \newcommand{\ec}{\end{cases}} % end cases
 
 % proof
-\@ifpackageloaded{amsthm}{
-  \@ifundefined{theorem}{
-    \newtheorem{theorem}{Theorem}
-    \theoremstyle{definition}
-    \newtheorem{definition}{Definition}[section]
-    \newtheorem{lemma}{Lemma}
-    \newtheorem{corollary}{Corollary}
-    \theoremstyle{remark}
-    \newtheorem*{remark}{Remark}
-  }
-}
+% \@ifpackageloaded{amsthm}{
+%   \@ifundefined{theorem}{
+%     \newtheorem{theorem}{Theorem}
+%     \theoremstyle{definition}
+%     \newtheorem{definition}{Definition}[section]
+%     \newtheorem{lemma}{Lemma}
+%     \newtheorem{corollary}{Corollary}
+%     \theoremstyle{remark}
+%     \newtheorem*{remark}{Remark}
+%   }
+% }
 
 % units
 \newcommand{\us}[1]{ \ \text{#1}} % unit + space
@@ -303,7 +330,7 @@
     numbers = left,
     framexleftmargin=10mm,
     frame=none,
-    %backgroundcolor=\color[RGB]{245,245,245},
+    % backgroundcolor=\color[RGB]{245,245,245},
     keywordstyle=\bfseries\color{blue},
     identifierstyle=\bfseries,
     numberstyle=\color[RGB]{0,192,192},
