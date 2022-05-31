@@ -1,6 +1,7 @@
 \ProvidesPackage{rakmacros}[16.9.2020 v1.0 R. Koitermaa]
 \RequirePackage{wrapfig}
 \RequirePackage{caption}
+\RequirePackage{subcaption}
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
@@ -20,6 +21,7 @@
 \newcommand{\x}{\text}
 \newcommand{\putrule}{\noindent\rule{\textwidth}{1pt}}
 \newcommand{\dualfig}[4]{
+  \noindent
   \begin{minipage}{.49\textwidth}   
     \begin{figure}[H]
       \centering
@@ -37,6 +39,7 @@
   \smallskip\\
 }
 \newcommand{\dualfigs}[5]{ %% [b] or [t] to align
+  \noindent
   \begin{minipage}{.49\textwidth}   
     \begin{figure}[H]
       \centering
@@ -54,6 +57,7 @@
   \smallskip\\
 }
 \newcommand{\dualfigss}[6]{
+  \noindent
   \begin{minipage}{.49\textwidth}
     \begin{figure}[H]
       \centering
@@ -70,7 +74,25 @@
   \end{minipage}
   \smallskip\\
 }
+\newcommand{\dualfigc}[5]{
+  \noindent
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \caption{#5}
+  \end{figure}
+}
 \newcommand{\trifig}[6]{
+  \noindent
   \begin{minipage}{.33\textwidth}   
     \begin{figure}[H]
       \centering
@@ -95,6 +117,7 @@
   \smallskip\\
 }
 \newcommand{\trifigs}[7]{
+  \noindent
   \begin{minipage}{#7\textwidth}
     \begin{figure}[H]
       \centering
@@ -118,7 +141,30 @@
   \end{minipage}
   \smallskip\\
 }
+\newcommand{\trifigc}[7]{
+  \noindent
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{.32\textwidth}
+    \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.32\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \begin{subfigure}[H]{.32\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#5}
+      \caption{#6}
+    \end{subfigure}
+    \caption{#7}
+  \end{figure}
+}
 \newcommand{\quadfig}[8]{
+  \noindent
   \begin{minipage}{.249\textwidth}   
     \begin{figure}[H]
       \centering
@@ -149,7 +195,35 @@
   \end{minipage}
   \smallskip\\
 }
+\newcommand{\quadfigc}[9]{
+  \noindent
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{.49\textwidth}
+    \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#5}
+      \caption{#6}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#7}
+      \caption{#8}
+    \end{subfigure}
+    \caption{#9}
+  \end{figure}
+}
 \newcommand{\fig}[3]{
+  \noindent
   \begin{figure}[H]
     \centering
     \includegraphics[width=#3\linewidth]{#1}
@@ -185,6 +259,7 @@
   \end{figure}
 }
 \newcommand{\dualtexfig}[6]{
+  \noindent
   \begin{minipage}{.49\textwidth}   
     \begin{figure}[H]
       \begin{center}
@@ -204,6 +279,26 @@
       \caption{#5}
     \end{figure}
   \end{minipage}
+  \smallskip\\
+}
+\newcommand{\dualtexfigc}[7]{
+  \noindent
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \fontsize{#3}{1em}
+      \resizebox{\linewidth}{!}{\input{#1}}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \fontsize{#6}{1em}
+      \resizebox{\linewidth}{!}{\input{#4}}
+      \caption{#5}
+    \end{subfigure}
+    \caption{#7}
+  \end{figure}
   \smallskip\\
 }
 
