@@ -12,6 +12,7 @@
 \RequirePackage{bm}
 \RequirePackage{multirow}
 \RequirePackage{mathtools}
+\RequirePackage{authblk}
 \RequirePackage[formats]{listings}
 
 % CUSTOM COMMANDS
@@ -30,6 +31,24 @@
     \end{figure}
   \end{minipage}
   \begin{minipage}{.49\textwidth}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{figure}
+  \end{minipage}
+  \smallskip\\
+}
+\newcommand{\dualfigd}[4]{
+  \noindent
+  \begin{minipage}{.49\linewidth}   
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{figure}
+  \end{minipage}
+  \begin{minipage}{.49\linewidth}
     \begin{figure}[H]
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
@@ -90,6 +109,57 @@
     \end{subfigure}
     \caption{#5}
   \end{figure}
+}
+\newcommand{\dualfigcd}[5]{
+  \noindent
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{.49\linewidth}
+      \centering
+      \includegraphics[width=\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\linewidth}
+      \centering
+      \includegraphics[width=\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \caption{#5}
+  \end{figure}
+}
+\newcommand{\dualfigw}[5]{
+  \noindent
+  \begin{figure*}
+    \centering
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \caption{#5}
+  \end{figure*}
+}
+\newcommand{\dualfigws}[6]{
+  \noindent
+  \begin{figure*}
+    \centering
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=#6\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=#6\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \caption{#5}
+  \end{figure*}
 }
 \newcommand{\trifig}[6]{
   \noindent
@@ -163,9 +233,75 @@
     \caption{#7}
   \end{figure}
 }
+\newcommand{\trifigcd}[7]{
+  \noindent
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{.32\linewidth}
+    \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[t]{.32\linewidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \begin{subfigure}[t]{.32\linewidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#5}
+      \caption{#6}
+    \end{subfigure}
+    \caption{#7}
+  \end{figure}
+}
+\newcommand{\trifigw}[7]{
+  \noindent
+  \begin{figure*}
+    \centering
+    \begin{subfigure}[H]{.32\textwidth}
+    \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.32\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \begin{subfigure}[H]{.32\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#5}
+      \caption{#6}
+    \end{subfigure}
+    \caption{#7}
+  \end{figure*}
+}
+\newcommand{\trifigws}[8]{
+  \noindent
+  \begin{figure*}
+    \centering
+    \begin{subfigure}[H]{.32\textwidth}
+    \centering
+      \includegraphics[width=#8\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.32\textwidth}
+      \centering
+      \includegraphics[width=#8\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \begin{subfigure}[H]{.32\textwidth}
+      \centering
+      \includegraphics[width=#8\linewidth]{#5}
+      \caption{#6}
+    \end{subfigure}
+    \caption{#7}
+  \end{figure*}
+}
 \newcommand{\quadfig}[8]{
   \noindent
-  \begin{minipage}{.249\textwidth}   
+  \begin{minipage}{.249\textwidth}
     \begin{figure}[H]
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
@@ -215,6 +351,33 @@
       \caption{#6}
     \end{subfigure}
     \begin{subfigure}[H]{.49\textwidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#7}
+      \caption{#8}
+    \end{subfigure}
+    \caption{#9}
+  \end{figure}
+}
+\newcommand{\quadfigcd}[9]{
+  \noindent
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[H]{.49\linewidth}
+    \centering
+      \includegraphics[width=1.0\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\linewidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\linewidth}
+      \centering
+      \includegraphics[width=1.0\linewidth]{#5}
+      \caption{#6}
+    \end{subfigure}
+    \begin{subfigure}[H]{.49\linewidth}
       \centering
       \includegraphics[width=1.0\linewidth]{#7}
       \caption{#8}
@@ -299,7 +462,7 @@
     \end{subfigure}
     \caption{#7}
   \end{figure}
-  \smallskip\\
+  \smallskip %%\\
 }
 
 \newcommand{\urlfn}[1]{\footnote{\url{#1}}} % url as footnote
