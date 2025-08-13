@@ -10,8 +10,11 @@
 \RequirePackage{comment}
 \RequirePackage{braket}
 \RequirePackage{bm}
+\RequirePackage{multirow}
 \RequirePackage{mathtools}
+\RequirePackage{authblk}
 \RequirePackage[formats]{listings}
+\RequirePackage[export]{adjustbox}
 
 % CUSTOM COMMANDS
 % util
@@ -22,32 +25,32 @@
 \newcommand{\dualfig}[4]{
   \noindent
   \begin{minipage}{.49\textwidth}   
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
       \caption{#2}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.49\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
       \caption{#4}
     \end{figure}
   \end{minipage}
-  \medskip
+  \smallskip\\
 }
 \newcommand{\dualfigd}[4]{
   \noindent
   \begin{minipage}{.49\linewidth}   
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
       \caption{#2}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.49\linewidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
       \caption{#4}
@@ -58,49 +61,49 @@
 \newcommand{\dualfigs}[5]{ %% [b] or [t] to align
   \noindent
   \begin{minipage}{.49\textwidth}   
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=#5\linewidth]{#1}
       \caption{#2}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.49\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=#5\linewidth]{#3}
       \caption{#4}
     \end{figure}
   \end{minipage}
-  \medskip
+  \smallskip\\
 }
 \newcommand{\dualfigss}[6]{
   \noindent
   \begin{minipage}{.49\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=#3\linewidth]{#1}
       \caption{#2}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.49\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=#6\linewidth]{#4}
       \caption{#5}
     \end{figure}
   \end{minipage}
-  \medskip
+  \smallskip\\
 }
 \newcommand{\dualfigc}[5]{
   \noindent
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \centering
-    \begin{subfigure}[t]{.49\textwidth}
+    \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
       \caption{#2}
     \end{subfigure}
-    \begin{subfigure}[t]{.49\textwidth}
+    \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
       \caption{#4}
@@ -110,14 +113,14 @@
 }
 \newcommand{\dualfigcd}[5]{
   \noindent
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \centering
-    \begin{subfigure}[t]{.49\linewidth}
+    \begin{subfigure}[ht!]{.49\linewidth}
       \centering
       \includegraphics[width=\linewidth]{#1}
       \caption{#2}
     \end{subfigure}
-    \begin{subfigure}[t]{.49\linewidth}
+    \begin{subfigure}[ht!]{.49\linewidth}
       \centering
       \includegraphics[width=\linewidth]{#3}
       \caption{#4}
@@ -129,12 +132,12 @@
   \noindent
   \begin{figure*}
     \centering
-    \begin{subfigure}[t]{.49\textwidth}
+    \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
       \caption{#2}
     \end{subfigure}
-    \begin{subfigure}[t]{.49\textwidth}
+    \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
       \caption{#4}
@@ -146,12 +149,12 @@
   \noindent
   \begin{figure*}
     \centering
-    \begin{subfigure}[t]{.49\textwidth}
+    \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \includegraphics[width=#6\linewidth]{#1}
       \caption{#2}
     \end{subfigure}
-    \begin{subfigure}[t]{.49\textwidth}
+    \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \includegraphics[width=#6\linewidth]{#3}
       \caption{#4}
@@ -162,56 +165,56 @@
 \newcommand{\trifig}[6]{
   \noindent
   \begin{minipage}{.33\textwidth}   
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
       \caption{#2}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.33\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
       \caption{#4}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.33\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#5}
       \caption{#6}
     \end{figure}
   \end{minipage}
-  \medskip
+  \smallskip\\
 }
 \newcommand{\trifigs}[7]{
   \noindent
   \begin{minipage}{#7\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
       \caption{#2}
     \end{figure}
   \end{minipage}
   \begin{minipage}{#7\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
       \caption{#4}
     \end{figure}
   \end{minipage}
   \begin{minipage}{#7\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#5}
       \caption{#6}
     \end{figure}
   \end{minipage}
-  \medskip
+  \smallskip\\
 }
 \newcommand{\trifigc}[7]{
   \noindent
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \centering
     \begin{subfigure}[t]{.32\textwidth}
     \centering
@@ -233,7 +236,7 @@
 }
 \newcommand{\trifigcd}[7]{
   \noindent
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \centering
     \begin{subfigure}[t]{.32\linewidth}
     \centering
@@ -322,38 +325,38 @@
 \newcommand{\quadfig}[8]{
   \noindent
   \begin{minipage}{.249\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#1}
       \caption{#2}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.249\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#3}
       \caption{#4}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.249\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#5}
       \caption{#6}
     \end{figure}
   \end{minipage}
   \begin{minipage}{.249\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=1.0\linewidth]{#7}
       \caption{#8}
     \end{figure}
   \end{minipage}
-  \medskip
+  \smallskip\\
 }
 \newcommand{\quadfigc}[9]{
   \noindent
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \centering
     \begin{subfigure}[t]{.49\textwidth}
     \centering
@@ -380,7 +383,7 @@
 }
 \newcommand{\quadfigcd}[9]{
   \noindent
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \centering
     \begin{subfigure}[t]{.49\linewidth}
     \centering
@@ -407,14 +410,14 @@
 }
 \newcommand{\fig}[3]{
   \noindent
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \centering
     \includegraphics[width=#3\linewidth]{#1}
     \caption{#2}
   \end{figure}
 }
 \newcommand{\animfig}[3]{
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \begin{center}
       \animategraphics[width=\textwidth,loop,autoplay]{12}{#1}{0}{#2}
     \end{center}
@@ -433,7 +436,7 @@
   \end{wrapfigure}
 }
 \newcommand{\texfig}[4]{
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \begin{center}
       \fontsize{#4}{1em}
       \resizebox{#3\linewidth}{!}{\input{#1}}
@@ -444,7 +447,7 @@
 \newcommand{\dualtexfig}[6]{
   \noindent
   \begin{minipage}{.49\textwidth}   
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \begin{center}
         \fontsize{#3}{1em}
         \resizebox{\linewidth}{!}{\input{#1}}
@@ -454,7 +457,7 @@
     \noindent
   \end{minipage}
   \begin{minipage}{.49\textwidth}
-    \begin{figure}[H]
+    \begin{figure}[ht!]
       \begin{center}
         \fontsize{#6}{1em}
         \resizebox{\linewidth}{!}{\input{#4}}
@@ -462,19 +465,19 @@
       \caption{#5}
     \end{figure}
   \end{minipage}
-  \medskip
+  \smallskip\\
 }
 \newcommand{\dualtexfigc}[7]{
   \noindent
-  \begin{figure}[H]
+  \begin{figure}[ht!]
     \centering
-    \begin{subfigure}[t]{.49\textwidth}
+    \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \fontsize{#3}{1em}
       \resizebox{\linewidth}{!}{\input{#1}}
       \caption{#2}
     \end{subfigure}
-    \begin{subfigure}[t]{.49\textwidth}
+    \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \fontsize{#6}{1em}
       \resizebox{\linewidth}{!}{\input{#4}}
@@ -482,7 +485,7 @@
     \end{subfigure}
     \caption{#7}
   \end{figure}
-  \medskip
+  \smallskip %%\\
 }
 
 \newcommand{\urlfn}[1]{\footnote{\url{#1}}} % url as footnote
