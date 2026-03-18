@@ -1,4 +1,4 @@
-\ProvidesPackage{rakmacros}[16.9.2020 v1.0 R. Koitermaa]
+\ProvidesPackage{rakmacros}[18.3.2026 v1.1 R. Koitermaa]
 \RequirePackage{wrapfig}
 \RequirePackage{caption}
 \RequirePackage{subcaption}
@@ -17,11 +17,18 @@
 \RequirePackage[export]{adjustbox}
 
 % CUSTOM COMMANDS
+
 % util
-% \newcommand{\chapter}[1]{\section*{#1}}
-% \newcommand{\chapter}{\section}
 \newcommand{\x}{\text}
 \newcommand{\putrule}{\noindent\rule{\textwidth}{1pt}}
+
+\newcommand{\urlfn}[1]{\footnote{\url{#1}}} % url as footnote
+
+% characters
+\newcommand{\tmu}{\ensuremath{\mu}}
+\newcommand{\eps}{\varepsilon}
+
+% figures
 \newcommand{\dualfig}[4]{
   \noindent
   \begin{minipage}{.49\textwidth}   
@@ -444,6 +451,15 @@
     \caption{#2}
   \end{figure}
 }
+\newcommand{\wraptexfig}[4]{
+  \begin{wrapfigure}{r}{#3\textwidth}
+    \begin{center}
+      \fontsize{#4}{1em}
+      \resizebox{0.9\linewidth}{!}{\input{#1}}
+    \end{center}
+    \caption{#2}
+  \end{wrapfigure}
+}
 \newcommand{\dualtexfig}[6]{
   \noindent
   \begin{minipage}{.49\textwidth}   
@@ -485,16 +501,11 @@
     \end{subfigure}
     \caption{#7}
   \end{figure}
-  \smallskip %%\\
+  \smallskip
 }
 
-\newcommand{\urlfn}[1]{\footnote{\url{#1}}} % url as footnote
+% MATHEMATICS
 
-% characters
-\newcommand{\tmu}{\ensuremath{\mu}}
-\newcommand{\eps}{\varepsilon}
-
-% math
 \newcommand{\eint}[2]{\mathrel{ \substack{#2\\ \bigg /\\ #1}}} % definite integral
 \newcommand{\vint}[2]{\bigg |_{#1}^{#2}} % definite integral, vertical bar
 \newcommand{\ninfty}{{-\infty}} % negative infinity
@@ -504,6 +515,7 @@
 \newcommand{\I}{\text{i}} % imaginary unit
 \newcommand{\hc}{\dagger} % Hermitian conjugate
 \newcommand{\vb}[1]{\bm{#1}} % vector bold
+\newcommand{\mr}[1]{\mathrm{#1}} % matrix roman
 \newcommand{\hvb}[1]{\hat{\bm{#1}}} % unit vector bold
 \DeclareMathOperator{\mln}{\overline{\ln}}
 \DeclareMathOperator{\Ln}{\text{Ln}} % logarithm principal value
@@ -557,6 +569,8 @@
 }
 \newcommand{\bna}{ \begin{nalign} \nonumber} % begin no number aligned
   \newcommand{\ena}{ \end{nalign} } % end no number aligned
+\newcommand{\bas}{ \begin{aligns}} % begin aligned subequations
+  \newcommand{\eas}{ \end{aligns}} % end aligned subequations
 \newcommand{\bpm}{\begin{pmatrix}} % begin pmatrix
   \newcommand{\epm}{\end{pmatrix}} % end pmatrix
 \newcommand{\bbm}{\begin{bmatrix}} % begin bmatrix
@@ -594,6 +608,35 @@
 \newcommand{\es}{\text{e}} % scientific notation
 \newcommand{\tp}[1]{ \times 10^{#1}} % power of ten
 
+% PHYSICS
+
+\newcommand{\el}{\x{e}^-} % electron
+
+% quantum operators
+\newcommand{\ha}{\hat a}
+\newcommand{\had}{\hat a^\dagger}
+\newcommand{\hx}{\hat X}
+\newcommand{\hh}{\hat H}
+\newcommand{\hp}{\hat P}
+\newcommand{\hu}{\hat U}
+\newcommand{\hl}{\hat L}
+\newcommand{\hlx}{\hat L_x}
+\newcommand{\hly}{\hat L_y}
+\newcommand{\hlz}{\hat L_z}
+\newcommand{\hll}{\hat L_\pm}
+\newcommand{\hlp}{\hat L_+}
+\newcommand{\hlm}{\hat L_-}
+\newcommand{\hs}{\hat S}
+\newcommand{\hsx}{\hat S_x}
+\newcommand{\hsy}{\hat S_y}
+\newcommand{\hsz}{\hat S_z}
+\newcommand{\hj}{\hat J}
+
+% COMPUTING
+
+% iteration
+\newcommand{\ite}[1]{^{(#1)}}
+
 % code
 \@ifpackageloaded{listings}{
   \lstdefineformat{C}{
@@ -624,33 +667,4 @@
 }
 
 \newcommand{\cf}[1]{\texttt{#1}} % console font
-
-% PHYSICS
-
-\newcommand{\el}{\x{e}^-} % electron
-
-% quantum operators
-\newcommand{\ha}{\hat a}
-\newcommand{\had}{\hat a^\dagger}
-\newcommand{\hx}{\hat X}
-\newcommand{\hh}{\hat H}
-\newcommand{\hp}{\hat P}
-\newcommand{\hu}{\hat U}
-\newcommand{\hl}{\hat L}
-\newcommand{\hlx}{\hat L_x}
-\newcommand{\hly}{\hat L_y}
-\newcommand{\hlz}{\hat L_z}
-\newcommand{\hll}{\hat L_\pm}
-\newcommand{\hlp}{\hat L_+}
-\newcommand{\hlm}{\hat L_-}
-\newcommand{\hs}{\hat S}
-\newcommand{\hsx}{\hat S_x}
-\newcommand{\hsy}{\hat S_y}
-\newcommand{\hsz}{\hat S_z}
-\newcommand{\hj}{\hat J}
-
-% COMPUTING
-
-% iteration
-\newcommand{\ite}[1]{^{(#1)}}
 
