@@ -487,13 +487,33 @@
   \noindent
   \begin{figure}[ht!]
     \centering
-    \begin{subfigure}[ht!]{.49\textwidth}
+    \begin{subfigure}[t]{.49\textwidth}
       \centering
       \fontsize{#3}{1em}
       \resizebox{\linewidth}{!}{\input{#1}}
       \caption{#2}
     \end{subfigure}
-    \begin{subfigure}[ht!]{.49\textwidth}
+    \begin{subfigure}[t]{.49\textwidth}
+      \centering
+      \fontsize{#6}{1em}
+      \resizebox{\linewidth}{!}{\input{#4}}
+      \caption{#5}
+    \end{subfigure}
+    \caption{#7}
+  \end{figure}
+  \smallskip
+}
+\newcommand{\dualtexfigcs}[8]{
+  \noindent
+  \begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[t]{#8\textwidth}
+      \centering
+      \fontsize{#3}{1em}
+      \resizebox{\linewidth}{!}{\input{#1}}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[t]{#8\textwidth}
       \centering
       \fontsize{#6}{1em}
       \resizebox{\linewidth}{!}{\input{#4}}
