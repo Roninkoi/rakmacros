@@ -118,18 +118,18 @@
     \caption{#5}
   \end{figure}
 }
-\newcommand{\dualfigcd}[5]{
+\newcommand{\dualfigcs}[6]{
   \noindent
   \begin{figure}[ht!]
     \centering
-    \begin{subfigure}[ht!]{.49\linewidth}
+    \begin{subfigure}[b]{.49\textwidth}
       \centering
-      \includegraphics[width=\linewidth]{#1}
+      \includegraphics[width=#6\linewidth]{#1}
       \caption{#2}
     \end{subfigure}
-    \begin{subfigure}[ht!]{.49\linewidth}
+    \begin{subfigure}[b]{.49\textwidth}
       \centering
-      \includegraphics[width=\linewidth]{#3}
+      \includegraphics[width=#6\linewidth]{#3}
       \caption{#4}
     \end{subfigure}
     \caption{#5}
@@ -164,6 +164,23 @@
     \begin{subfigure}[ht!]{.49\textwidth}
       \centering
       \includegraphics[width=#6\linewidth]{#3}
+      \caption{#4}
+    \end{subfigure}
+    \caption{#5}
+  \end{figure*}
+}
+\newcommand{\dualfighs}[6]{
+  \noindent
+  \begin{figure*}
+    \centering
+    \begin{subfigure}[t]{.49\textwidth}
+    \centering
+      \includegraphics[height=#6\linewidth]{#1}
+      \caption{#2}
+    \end{subfigure}
+    \begin{subfigure}[t]{.49\textwidth}
+      \centering
+      \includegraphics[height=#6\linewidth]{#3}
       \caption{#4}
     \end{subfigure}
     \caption{#5}
@@ -439,6 +456,14 @@
     \caption{#2}
   \end{wrapfigure}
 }
+\newcommand{\wrapfigl}[3]{
+  \begin{wrapfigure}{L}{#3\textwidth}
+    \begin{center}
+      \includegraphics[width=#3\textwidth]{#1}
+    \end{center}
+    \caption{#2}
+  \end{wrapfigure}
+}
 \newcommand{\texfig}[4]{
   \begin{figure}[ht!]
     \begin{center}
@@ -450,6 +475,15 @@
 }
 \newcommand{\wraptexfig}[4]{
   \begin{wrapfigure}{R}{#3\textwidth}
+    \begin{center}
+      \fontsize{#4}{1em}
+      \resizebox{0.9\linewidth}{!}{\input{#1}}
+    \end{center}
+    \caption{#2}
+  \end{wrapfigure}
+}
+\newcommand{\wraptexfigl}[4]{
+  \begin{wrapfigure}{L}{#3\textwidth}
     \begin{center}
       \fontsize{#4}{1em}
       \resizebox{0.9\linewidth}{!}{\input{#1}}
